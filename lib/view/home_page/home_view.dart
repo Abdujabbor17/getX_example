@@ -22,7 +22,7 @@ class _HomePageState extends State<HomePage> {
   void initState() {
     super.initState();
     Get.find<HomeController>().apiPostList();
-   // _controller.apiPostList();
+    //_controller.apiPostList();
   }
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
               child: ListView.builder(
                 itemCount: Get.find<HomeController>().posts.length,
                 itemBuilder: (ctx, index) {
-                  PostModel post = _controller.posts[index];
+                  PostModel post = Get.find<HomeController>().posts[index];
                   return postItem(context,_controller, post,(){});
                 },
               ),

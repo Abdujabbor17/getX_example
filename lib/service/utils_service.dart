@@ -7,7 +7,7 @@ class Utils {
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           behavior: SnackBarBehavior.floating,
-          margin:  EdgeInsets.only(bottom: MediaQuery.of(context).size.height-120),
+          margin:  EdgeInsets.only(bottom: MediaQuery.of(context).size.height-200),
           content: Text(text),
           backgroundColor: Colors.red,));
   }
@@ -16,7 +16,7 @@ class Utils {
     ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
           behavior: SnackBarBehavior.floating,
-          margin:  EdgeInsets.only(bottom: MediaQuery.of(context).size.height-120),
-          content: Text(text),backgroundColor: Colors.green,));
+          margin:  EdgeInsets.only(bottom: MediaQuery.of(context).size.height-200),
+          content: Text(text),backgroundColor: Colors.green));
   }
 }
